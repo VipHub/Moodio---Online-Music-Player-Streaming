@@ -1,0 +1,104 @@
+{
+  "project_info": {
+    "project_number": "112195047837",
+    "firebase_url": "https://admob-app-id-6168645162.firebaseio.com",
+    "project_id": "admob-app-id-6168645162",
+    "storage_bucket": "admob-app-id-6168645162.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112195047837:android:2d5d480e726ce9bc",
+        "android_client_info": {
+          "package_name": "com.asterisk.testproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112195047837-b9msp3ou67hpju0iv15bg7fmh22g77i9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHVXeFmTPMhpNFladyOA1c9Mr2HTSaCwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112195047837:android:a4eaeb37e0cc1279",
+        "android_client_info": {
+          "package_name": "com.mongoose.moodio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112195047837-b9msp3ou67hpju0iv15bg7fmh22g77i9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHVXeFmTPMhpNFladyOA1c9Mr2HTSaCwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112195047837:android:8cd90371603c735e",
+        "android_client_info": {
+          "package_name": "com.mongoose.app.moodio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112195047837-b9msp3ou67hpju0iv15bg7fmh22g77i9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHVXeFmTPMhpNFladyOA1c9Mr2HTSaCwM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

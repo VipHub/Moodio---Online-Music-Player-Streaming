@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mongoose.moodio.MainActivity">
+    <item
+        android:id="@+id/action_settings_option"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="99"
+        android:icon="@drawable/ic_search_tinted"
+        android:title="@string/action_search"
+        app:showAsAction="always" />
+</menu>

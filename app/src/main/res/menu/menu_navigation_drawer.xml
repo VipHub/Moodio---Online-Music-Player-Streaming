@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mongoose.moodio.songs.NavigationDrawerActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_library"
+            android:checked="true"
+            android:icon="@drawable/ic_my_library_music_grey600_24dp"
+            android:title="@string/action_library" />
+
+        <item
+            android:id="@+id/action_myplaylist"
+            android:icon="@drawable/ic_dashboard_grey600_24dp"
+            android:title="@string/action_myplaylist" />
+       <!-- <item
+            android:id="@+id/action_downloads"
+            android:icon="@drawable/ic_arrow_downward_black_24dp"
+            android:title="@string/action_downloads" /> -->
+    </group>
+        <group android:checkable="false">
+        <item
+            android:id="@+id/action_settings"
+            android:title="@string/action_settings"
+            android:icon="@drawable/ic_settings_black_24dp" />
+        <item
+            android:id="@+id/action_about"
+            android:icon="@drawable/ic_error_outline_black_24dp"
+            android:title="@string/action_about" />
+        <item
+            android:id="@+id/action_exit"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/action_exit" />
+        </group>
+</menu>

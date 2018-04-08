@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General Settings" >
+
+        <Preference
+            android:title="@string/action_clear_recents"
+            android:summary="Recently Played Songs"
+            android:key="recent"
+            android:icon="@drawable/ic_clear_black_24dp" />
+        <ListPreference
+            android:title="Language"
+            android:summary="English"
+            android:key="language"
+            android:entries="@array/lang"
+            android:entryValues="@array/langVal"
+            android:icon="@drawable/ic_language_black_24px">
+        </ListPreference>
+        <Preference
+            android:title="Rate Us"
+            android:key="rate"
+            android:icon="@drawable/ic_star_border_black_24dp"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

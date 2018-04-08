@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/layout_player_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_footer"
+        android:layout_below="@+id/layout_header" >
+
+        <ImageView
+            android:id="@+id/iv_playerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/music_bg"
+            android:paddingBottom="60dp" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/player_adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="FULL_WIDTHx60"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_footer"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:alpha=".85"
+        android:background="@drawable/player_footer_bg"
+        android:padding="8dp"
+        android:paddingTop="0dp">
+
+        <com.mongoose.app.moodio.comp.MyTextView
+            android:id="@+id/tv_currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/songProgressBar"
+            android:text="--/--"
+            android:textSize="12sp" />
+
+        <com.mongoose.app.moodio.comp.MyTextView
+            android:id="@+id/tv_totalDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/songProgressBar"
+            android:text="--/--"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_currentTime"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_repeat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.20"
+                android:background="@null"
+                android:src="@drawable/ic_repeat_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/btn_prev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.20"
+                android:background="@null"
+                android:src="@drawable/ic_skip_previous_black_36dp" />
+
+
+            <ImageButton
+                android:id="@+id/btn_play"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.20"
+                android:background="@null"
+                android:src="@drawable/ic_play_circle_fill_blue_48dp" />
+
+            <ImageButton
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.20"
+                android:background="@null"
+                android:src="@drawable/ic_skip_next_black_36dp" />
+
+            <ImageButton
+                android:id="@+id/btn_shuffle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.20"
+                android:background="@null"
+                android:src="@drawable/ic_shuffle_black_24dp" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/songProgressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:padding="0dp"
+            android:thumb="@drawable/seek_handler"
+            android:thumbOffset="5dp"
+            android:indeterminate="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/white"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_cardImage"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/music_bg" />
+
+        <com.mongoose.app.moodio.comp.MyTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@+id/btn_play_short"
+            android:layout_toRightOf="@+id/iv_cardImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Unknown Title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:marqueeRepeatLimit="marquee_forever" />
+
+        <com.mongoose.app.moodio.comp.MyTextView
+            android:id="@+id/tv_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_toLeftOf="@+id/btn_play_short"
+            android:layout_toRightOf="@+id/iv_cardImage"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Unknown Artist" />
+
+        <ImageButton
+            android:id="@+id/btn_play_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_pause_black_48dp"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-16dp"
+            android:background="@null"
+            android:src="@drawable/ic_more_vert_black_36dp"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/progressBarmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/btn_play_short"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

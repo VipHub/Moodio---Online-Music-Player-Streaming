@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="wrap_content">
+
+    <com.mongoose.app.moodio.comp.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Internet Connection.."
+        android:textSize="24sp"
+        android:textStyle="normal|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Settings"
+            android:textColor="@color/color_primary"
+            android:layout_weight="0.25" />
+
+        <Button
+            android:id="@+id/btn_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Retry"
+            android:textColor="@color/color_primary"
+            android:layout_weight="0.25" />
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Exit"
+            android:textColor="@color/color_primary"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+
+</LinearLayout>

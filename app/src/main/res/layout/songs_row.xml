@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_cardImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/music_bg"
+            android:scaleType="fitXY"/>
+
+        <com.mongoose.app.moodio.comp.MyTextView
+            android:id="@+id/tv_title"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/btn_play"
+            android:layout_toRightOf="@+id/iv_cardImage"
+            android:layout_toEndOf="@+id/iv_cardImage"
+            android:layout_toStartOf="@+id/btn_play"
+            android:layout_width="wrap_content" />
+
+        <com.mongoose.app.moodio.comp.MyTextView
+            android:id="@+id/tv_artist"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="10dp"
+            android:text="Lyrics"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/iv_cardImage"
+            android:layout_toLeftOf="@+id/btn_play"
+            android:layout_width="wrap_content" />
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_downward_black_24dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_close"
+            android:id="@+id/btn_play"
+            android:background="@color/transparent_white"
+            android:layout_alignBottom="@+id/tv_artist"
+            android:layout_width="40dp" />
+
+        <ImageButton
+            android:id="@+id/btn_close"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/btn_play"
+            android:layout_width="50dp" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

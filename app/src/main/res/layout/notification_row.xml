@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/iv_cardImage"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/music_bg"
+            android:scaleType="fitXY"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/btn_play"
+            android:layout_toRightOf="@+id/iv_cardImage"
+            android:layout_toEndOf="@+id/iv_cardImage"
+            android:layout_toStartOf="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:src="@drawable/ic_pause_circle_fill_blue_48dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_close"
+            android:id="@+id/btn_play"
+            android:background="@android:color/transparent"
+            android:layout_alignBottom="@+id/tv_artist"
+            android:layout_height="wrap_content"
+            android:layout_width="40dp" />
+
+        <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/btn_play" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_height="wrap_content"
+            android:text="Lyrics"
+            android:textSize="@dimen/abc_text_size_small_material"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_toRightOf="@+id/iv_cardImage"
+            android:layout_toEndOf="@+id/iv_cardImage"
+            android:textColor="@android:color/black" />
+
+</RelativeLayout>

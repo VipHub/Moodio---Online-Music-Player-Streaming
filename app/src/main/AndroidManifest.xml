@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mongoose.app.moodio">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LangSelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splashScreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SongsDetailActivity"
+            android:label="@string/title_activity_songs_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait">
+
+            <!-- <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".MainActivity" /> -->
+        </activity>
+
+        <service
+            android:name=".utils.MusicService"
+            android:stopWithTask="true"
+            android:enabled="true" />
+
+        <activity
+            android:name=".PlayListActivity"
+            android:label="@string/title_activity_play_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".utils.MusicService$AudioPlayerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.asterisk.testproject.ACTION_PLAY" />
+                <action android:name="com.asterisk.testproject.ACTION_CLOSE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".utils.WebViewActivity" />
+        <activity android:name=".SearchActivityTest"></activity>
+    </application>
+
+</manifest>

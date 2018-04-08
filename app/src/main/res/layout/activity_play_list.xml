@@ -1,0 +1,63 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="68dp"
+    sothree:umanoShadowHeight="4dp"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/collapse_app_bar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="70dp"
+            app:srcCompat="@drawable/empty"
+            android:id="@+id/img_empty"
+            app:layout_anchor="@+id/recyclerView"
+            app:layout_anchorGravity="center_vertical|center_horizontal"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_height="84dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            sothree:fabSize="mini"
+            sothree:srcCompat="@drawable/ic_play_arrow_black_48dp"
+            android:id="@+id/btn_fab"
+            app:layout_anchorGravity="bottom|right"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            app:backgroundTint="@color/color_primary"
+            android:visibility="invisible" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/player"
+        layout="@layout/player"
+        android:visibility="gone"/>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mongoose.app.moodio.com.asterisk.moodio.SettingsActivity"
+    tools:showIn="@layout/activity_settings"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:text="Clear Searches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_weight="0.07"
+        android:elevation="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:typeface="normal"
+        tools:ignore="RtlCompat"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        style="@style/Widget.AppCompat.Button"
+        android:background="@drawable/above_shadow"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:text="Change language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_weight="0.06"
+        android:elevation="0dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:typeface="normal"
+        tools:ignore="RtlCompat"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:background="@drawable/above_shadow"
+        android:paddingLeft="10dp" />
+</LinearLayout>
