@@ -21,11 +21,11 @@
     <string name="action_library">My Library</string>
     <string name="title_activity_play_list">PlayListActivity</string>
     <string name="title_activity_base">BaseActivity</string>
-    <string name="banner_ad_unit_id">ca-app-pub-7649988513709896/6076939964</string>
-    <string name="banner_ad_unit_id_2">ca-app-pub-7649988513709896/4690271561</string>
-    <string name="native_ad_unit_id_1">ca-app-pub-7649988513709896/2971693962</string>
-    <string name="native_ad_unit_id_2">ca-app-pub-7649988513709896/4829872360</string>
-    <string name="down_dialog_ad_unit_id">ca-app-pub-7649988513709896/2535364365</string>
+    <string name="banner_ad_unit_id"></string>
+    <string name="banner_ad_unit_id_2"></string>
+    <string name="native_ad_unit_id_1"></string>
+    <string name="native_ad_unit_id_2"></string>
+    <string name="down_dialog_ad_unit_id"></string>
     <string name="download">Download Song</string>
     <string name="action_exit">Exit</string>
     <string name="action_settings">Settings</string>

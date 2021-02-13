@@ -10,7 +10,8 @@ public class Conf {
     public static final String SERVER = "http://data-server.us-west-2.elasticbeanstalk.com/";
     public static final String API_ADD = "https://www.googleapis.com/youtube/";
     public static final String NEW_YT_SERVER = "https://www.youtube.com/";
-    public static final String YTINMP3 = "http://youtubeinmp3.me/";
+    //public static final String YTINMP3 = "http://youtubeinmp3.me/";
+    public static final String YTINMP3 = "https://immense-plains-44337.herokuapp.com/";
     public static final String API_SERVER = "http://app-data-server.blogspot.in/2017/03/";
     public static final String SUG_SERVER = "http://suggestqueries.google.com/";
 }

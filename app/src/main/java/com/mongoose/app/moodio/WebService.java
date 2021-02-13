@@ -53,11 +53,15 @@ public interface WebService {
             @Query("q") String id,
             @Query("page") int no
     );
-    @GET("api/generate.php?")
+    /*@GET("api/generate.php?")
     Call<ResponseBody> getUrlFromYtInMp3(
             @Query("id") String id
-    );
+    );*/
 
+    @GET("api/{id}/")
+    Call<ResponseBody> getUrlFromYtInMp3(
+            @Path("id") String id
+    );
     @GET("{path}")
     Call<ResponseBody> callApi(
             @Path("path") String path

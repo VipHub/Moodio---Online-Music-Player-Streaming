@@ -470,16 +470,18 @@ public class MusicService extends Service implements MediaPlayer.OnPreparedListe
                     //System.out.println("haha"+data);
 
                     if (data != null) {
+                        System.out.println("mala"+data.toString());
                         Document document = Jsoup.parse(data);
 
 
-                        Elements elements = document.getElementsByTag("a");
+                        Element element = document.select("body").first();
                         //elements.stream().forEach((e) -> {
                         //  System.out.println(e.attr("onclick"));
                         //});
-                        Element ele = elements.get(0);
-                        String str = ele.attr("onclick");
-                        str = str.substring(13, str.length()-2);
+                        //Element ele = elements.get(0);
+                        //String str = ele.attr("onclick");
+                        //str = str.substring(13, str.length()-2);
+                        String str = element.text();
                         System.out.println("hiiiii"+str);
 
 
